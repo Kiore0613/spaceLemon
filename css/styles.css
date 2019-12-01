@@ -155,7 +155,7 @@ header .container {
 .packages-offers {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	width: 80%;
+	width: 100%;
 }
 
 .section-packages {
@@ -167,9 +167,9 @@ header .container {
 	width: 290px;
 	height: 500px;
 	background: #ffffff;
-	-webkit-box-shadow: 10px 10px 5px 8px rgba(0, 0, 0, 0.56);
-	-moz-box-shadow: 10px 10px 5px 8px rgba(0, 0, 0, 0.56);
-	box-shadow: 10px 10px 5px 8px rgba(0, 0, 0, 0.56);
+	-webkit-box-shadow: 8px 8px 8px 1px #d3d3d3;
+	-moz-box-shadow: 8px 8px 8px 1px #d3d3d3;
+	box-shadow: 8px 8px 8px 1px #d3d3d3;
 }
 
 .section-packages h1 {
@@ -196,7 +196,7 @@ header .container {
 }
 
 .packages {
-	padding: 70px;
+	padding: 56px;
 	background: url(../img/bg_yellow_lines.png);
 	background-size: contain;
 	background-position: top;
@@ -295,7 +295,27 @@ header .container {
 	position: relative;
 }
 
-/* ----- ----- MEDIA QUERIES ----- ----- */
+/* --------------------------------- MEDIA QUERIES ----- ------------------------------ */
+
+@media screen and (max-width: 996px) {
+	/* --------- Packages section ---------- */
+	.packages {
+		height: auto;
+	}
+
+	.section-packages {
+		width: 80%;
+		margin: 0;
+	}
+
+	.packages-offers {
+		grid-template-columns: 1fr;
+		grid-gap: 16px;
+		width: 100%;
+		justify-items: center;
+	}
+}
+
 @media screen and (max-width: 800px) {
 	header .container {
 		position: static;
@@ -383,6 +403,11 @@ header .container {
 		border-left: none;
 	}
 
+	/* --------- Packages section ---------- */
+	.packages {
+		padding: 24px;
+	}
+
 	/* --------- About us section ---------- */
 
 	.about-us {
@@ -390,23 +415,6 @@ header .container {
 		flex-flow: column;
 		text-align: center;
 		justify-content: space-evenly;
-	}
-
-	/* --------- Packages section ---------- */
-
-	.packages {
-		height: auto;
-	}
-
-	.packages-offers {
-		grid-template-columns: 1fr;
-		grid-gap: 16px;
-		width: 100%;
-	}
-
-	.section-packages {
-		width: 100%;
-		margin: 0;
 	}
 
 	/* ---------- Footer section ------------ */
@@ -461,5 +469,17 @@ header .container {
 	.main .ubicacion .horarios .fin-semana {
 		width: 100%;
 		margin-bottom: 10px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	/* --------- Packages section ---------- */
+
+	.packages {
+		padding: 8px;
+	}
+
+	.section-packages {
+		width: 100%;
 	}
 }
