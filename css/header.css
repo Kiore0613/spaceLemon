@@ -1,0 +1,53 @@
+
+header {
+    background: url(../img/img_bg_1.jpg);
+    background-attachment: scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+@media screen and (min-width: 768px) {
+  .menu-logo {
+    width: 60px;
+    height: 70px;
+  }
+  
+  header .container {
+    position: relative;
+    height: 800px;
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .menu a {
+    color: #161936;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 300;
+    font-family: "bebas";
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    margin: 40px 20px;
+    text-decoration: none;
+    position: relative;
+  }
+  
+  .menu a:hover {
+    text-decoration: none;
+  }
+  
+  .header-text h1 {
+    font-family: "bebas";
+    font-size: 70px;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+    top: 250px;
+  }
+}
