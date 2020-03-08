@@ -1,0 +1,23 @@
+.home {
+    margin: 8px;
+}
+
+.section-title {
+    text-align: center;
+    margin: 16px;
+}
+
+.services-container {
+    text-align: center;
+}
+
+.section-home img{ 
+    display: flex;
+    margin: 0 auto;
+}
+
+.section-home p {
+    font-size: 12px;
+    margin: 16px;
+    text-align: justify;
+}
