@@ -1,0 +1,61 @@
+header {
+  height: 250px;
+  background: linear-gradient(
+      to bottom,
+      rgba(232, 231, 231, 0.39),
+      rgb(56, 37, 86)
+    ),
+    url(../img/bg_portfolio.jpg);
+
+  background-attachment: scroll;
+  background-size: cover;
+  background-repeat: space;
+  background-position: center;
+}
+
+.container-portfolio {
+  margin-bottom: 64px;
+}
+
+.portfolio-info {
+  margin: 64px 0 32px 0;
+  padding: 16px;
+  text-align: center;
+}
+
+.portfolio-info h1 {
+  padding: 16px;
+}
+
+.carousel {
+  height: 340px;
+  margin-bottom: 64px;
+  display: flex;
+}
+
+.image {
+  width: 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 768px) {
+  .carousel {
+    height: 650px;
+    margin-bottom: 80px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .carousel {
+    height: 450px;
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  .image {
+    border-radius: 16px;
+    background-size: 100% 100%;
+    background-position: center;
+  }
+}

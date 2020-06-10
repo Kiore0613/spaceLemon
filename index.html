@@ -5,26 +5,46 @@
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0,
-      user-scalable=no, maximum-scale=1.0, minimum-scale=1.0"/>
+      user-scalable=no, maximum-scale=1.0, minimum-scale=1.0"
+    />
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/menu.css" />
     <link type="image/x-icon" href="img/logo_menu.png" rel="icon" />
     <title>Space Lemon</title>
+    <script
+      src="http://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/menu.js"></script>
   </head>
   <body>
     <header>
       <div class="container">
-        <nav class="menu">
-          <a href="#" id="btn-home">Inicio</a>
-          <a href="#" id="btn-about-us">Nosotros</a>
-          <a href="packages.html" id="btn-packages">Paquetes</a>
-          <a>
-            <img src="img/logo_menu.png" class="menu-logo" alt="Logo" />
+        <div class="header-menu">
+          <a href="#" class="menu-on">
+            <span></span>
+            <span></span>
+            <span></span>
           </a>
-          <a href="portfolio.html" id="btn-portfolio">Portafolio</a>
-          <a href="#" id="btn-contact-us">Contáctanos</a>
+          <div class="logo">
+            <a>
+              <img src="img/logo_menu.png" class="menu-logo logo" alt="Logo" />
+            </a>
+          </div>
+        </div>
+        <nav class="menu">
+          <a href="#home" class="menu-on">Inicio</a>
+          <a href="#about-us" class="menu-on">Nosotros</a>
+          <a href="packages.html" class="menu-on">Paquetes</a>
+          <a class="menu-logo-desktop">
+            <img src="img/logo_menu.png" class="logo" alt="Logo" />
+          </a>
+          <a href="portfolio.html" class="menu-on">Portafolio</a>
+          <a href="#contact-us" class="menu-on">Contáctanos</a>
         </nav>
         <div class="header-text">
           <h1>
@@ -34,38 +54,36 @@
         </div>
       </div>
     </header>
-    <section class="main">
+    <div class="main">
       <section class="home" id="home">
         <h1 class="section-title">Nuestros servicios</h1>
         <div class="services-container">
-          <div class="section-home">
-            <h1>Social Media</h1>
+          <div class="section-home" id="home">
+            <h2>Social Media</h2>
             <img
               src="img/ic_social_media.png"
               alt="Social
-              Media"/>
+              Media"
+            />
             <p>
               Generamos campañas creativas, capaces de atraer clientes y generar
               seguidores a tu negocio, por medio de estrategias digitales que
               incluyen: pauta, fotografía, video, animaciones y mucho más.
             </p>
           </div>
-
-          <div class="section-home section-border-left">
-            <h1>Diseño Gráfico</h1>
-            <img
-              src="img/ic_graphic_design.png"
-              alt="Diseño
-              Gráfico"
-            />
+          <div class="section-home">
+            <hr class="line" />
+            <h2>Diseño Gráfico</h2>
+            <img src="img/ic_graphic_design.png" alt="Diseño Gráfico" />
             <p>
               Estamos en constante capacitación e investigación de tendencias,
               para lograr que tu marca y/o empresa este siempre un paso delante
               de la competencia en branding, diseño digital y páginas web.
             </p>
           </div>
-          <div class="section-home section-border-left">
-            <h1>Audiovisuales</h1>
+          <div class="section-home">
+            <hr class="line" />
+            <h2>Audiovisuales</h2>
             <img src="img/ic_photograph.png" alt="Fotografía" />
             <p>
               Creamos contenido profesional, adecuado a tus necesidades desde
@@ -77,8 +95,8 @@
         </div>
       </section>
       <section class="about-us" id="about-us">
-        <h1>Nosotros</h1>
-        <p>
+        <h1 class="align">Nosotros</h1>
+        <p class="align">
           Somos Space Lemon Media <br />
           empresa encargada del manejo de redes sociales de <br />
           manera profesional, así como el diseño <br />
@@ -89,51 +107,39 @@
       <section class="packages" id="packages">
         <h1 class="section-title">Paquetes</h1>
         <h3>Te contamos sobre los paquetes que manejamos</h3>
-        <div class="packages-offers">
+        <div class="packages-deals">
           <div class="section-packages">
-            <div class="section-package-info">
-              <h1>FACEBOOK</h1>
+            <div>
+              <h2>FACEBOOK</h2>
               <p>
-                -Propuesta de línea gráfica<br />
-                para el mes.<br />
-                -Sesión fotográfica.<br />
-                .Publicaciones semanales.<br />
-                -Diseño y creación de<br />
-                contenido.<br />
-                -Monitoreo de competencia<br />
-                -Manejo de redes sociales<br />
-                (Publicación de contenido,<br />
-                respuesta a comentarios en<br />
-                publicaciones y mensajes<br />
-                directos)<br />
+                -Públicaciones mensuales.<br />
+                -Video o animación mensual.<br />
+                -Cover animado.<br />
+                -Fotográfia bimensual.<br />
+                -Adaptación gráfica mensual.<br />
+                -Pauta en redes sociales.<br />
+                -Manejo de redes sociales.<br />
               </p>
             </div>
-            <h3>DESDE $150</h3>
+            <h3>DESDE $175</h3>
           </div>
           <div class="section-packages">
-            <div class="section-package-info">
-              <h1>INSTAGRAM</h1>
+            <div>
+              <h2>INSTAGRAM</h2>
               <p>
-                -Sesión fotográfica<br />
-                profesional.<br />
-                -Avatar.<br />
-                -Publicaciones semanales.<br />
-                -Historia semanale.<br />
-                -Diseño y creación de<br />
-                contenido.<br />
-                -Monitoreo de competencia<br />
-                -Manejo de redes sociales<br />
-                (Publicación de contenido,<br />
-                respuesta a comentarios en<br />
-                publicaciones y mensajes<br />
-                directos)<br />
+                -Públicaciones mensuales.<br />
+                -Video o animación mensual.<br />
+                -Fotográfia bimensual.<br />
+                -Adaptación gráfica mensual.<br />
+                -Pauta en redes sociales.<br />
+                -Manejo de redes sociales.<br />
               </p>
             </div>
-            <h3>DESDE $100</h3>
+            <h3>DESDE $175</h3>
           </div>
           <div class="section-packages">
-            <div class="section-package-info">
-              <h1>PÁGINAS WEB</h1>
+            <div>
+              <h2>PÁGINAS WEB</h2>
               <p>
                 -Diseño de página web.<br />
                 -Home.<br />
@@ -147,33 +153,30 @@
           </div>
         </div>
       </section>
-    </section>
-    <footer class="footer-lemon" id="contact-us">
+    </div>
+    <footer class="footer-lemon">
       <div class="footer-image">
         <img src="img/logo_footer.png" class="footer-logo" alt="Logo" />
       </div>
       <div class="footer-contact">
-        <h3>Contáctanos</h3>
-        <h3>Teléfono: 7952-9635</h3>
+        <p>Contáctanos</p>
+        <p>Teléfono: 7952-9635</p>
       </div>
-      <div class="footer-social">
-        <a href="https://www.facebook.com/spacelemonmedia/">
+      <div class="footer-social" id="contact-us">
+        <a href="https://www.facebook.com/spacelemonmedia/" target="_blank">
           <img src="img/ic_fb.png" class="social-media" alt="" />
         </a>
-        <a href="#">
+        <a href="#" target="_blank">
           <img src="img/ic_instagram.png" class="social-media" alt="" />
         </a>
-        <a href="mailto:space.lemon.media@gmail.com">
+        <a href="mailto:space.lemon.media@gmail.com" target="_blank">
           <img src="img/ic_gmail.png" class="social-media" alt="" />
         </a>
       </div>
       <div class="copyright">
-        <p class="copy">Privacy Policy © 2020</p>
-        <p class="copy">Copyright Space Lemon Media</p>
+        <p>Privacy Policy © 2020</p>
+        <p>Copyright Space Lemon Media</p>
       </div>
     </footer>
-    <script src="js/jquery-1.12.3.min.js"></script>
-    <script src="js/parallax.js"></script>
-    <script src="js/animations.js"></script>
   </body>
 </html>

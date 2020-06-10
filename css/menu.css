@@ -1,0 +1,140 @@
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.logo {
+  width: 50px;
+  height: 60px;
+}
+
+.menu {
+  display: grid;
+}
+
+.menu-on {
+  display: inline-block;
+  width: 30px;
+  height: 20px;
+  position: relative;
+  z-index: 2;
+  font-size: 24px;
+  color: #191636;
+}
+
+.menu-on span {
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  display: block;
+  position: absolute;
+  background: #191636;
+  transition: all 0.25s ease;
+  transform-origin: 0px 100%;
+}
+
+.menu-on span:nth-child(2) {
+  top: calc(50% - 2px);
+}
+
+.menu-on span:nth-child(3) {
+  bottom: 0;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: -300px;
+  width: 300px;
+  z-index: 1;
+  padding: 90px 30px 30px;
+  background: #ffff;
+  opacity: 0;
+  transition: all 0.75s ease;
+  font-family: "bebas";
+  font-size: 18px;
+  overflow-y: auto;
+}
+
+menu a {
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  color: #191636;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all ease 0.25s;
+}
+
+a:hover {
+  border-bottom-color: rgba(255, 255, 255, 0.4);
+}
+
+.visible-menu span:nth-child(1) {
+  transform: rotate(45deg) translate(-2px, 1px);
+}
+
+.visible-menu span:nth-child(2) {
+  opacity: 0;
+}
+
+.visible-menu span:nth-child(3) {
+  transform: rotate(-45deg) translate(-3px, 3px);
+}
+
+.visible-menu nav {
+  left: 0;
+  opacity: 1;
+}
+
+.menu-logo-desktop {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .header-menu {
+    display: none;
+  }
+  .menu-logo-desktop {
+    display: block;
+  }
+
+  .menu-logo {
+    display: none;
+  }
+
+  .menu-on {
+    display: none;
+  }
+
+  .menu {
+    all: unset;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav {
+    all: unset;
+  }
+
+  .menu a {
+    width: 100%;
+    color: #161936;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 300;
+    font-family: "bebas";
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    margin: 40px 20px;
+    text-decoration: none;
+    position: relative;
+  }
+
+  .menu a:hover {
+    text-decoration: none;
+  }
+}
