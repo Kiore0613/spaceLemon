@@ -21,6 +21,7 @@ header {
   margin: 64px 0 32px 0;
   padding: 16px;
   text-align: center;
+  color: #161936;
 }
 
 .portfolio-info h1 {
@@ -28,20 +29,24 @@ header {
 }
 
 .carousel {
-  height: 340px;
+  height: 200px;
+  width: 300px;
+  margin: 0 auto;
   margin-bottom: 64px;
   display: flex;
 }
 
 .image {
   width: 100%;
+  border-radius: 16px;
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
 @media screen and (min-width: 768px) {
   .carousel {
-    height: 650px;
+    height: 430px;
+    width: 650px;
     margin-bottom: 80px;
   }
 }
@@ -49,12 +54,10 @@ header {
 @media screen and (min-width: 1024px) {
   .carousel {
     height: 450px;
-    width: 600px;
-    margin: 0 auto;
+    width: 850px;
   }
 
   .image {
-    border-radius: 16px;
     background-size: 100% 100%;
     background-position: center;
   }

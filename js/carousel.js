@@ -15,6 +15,38 @@ window.onload = function () {
 
   const webImages = ["img/img_cs3_1.jpg", "img/img_cs3_2.jpg"];
 
+  const mobileSocialImages = [
+    "img/img_m_cs1_1.jpg",
+    "img/img_m_cs1_2.jpg",
+    "img/img_m_cs1_3.jpg",
+    "img/img_m_cs1_4.jpg",
+  ];
+
+  const mobileBrandingImages = [
+    "img/img_m_cs2_1.jpg",
+    "img/img_m_cs2_2.jpg",
+    "img/img_m_cs2_3.jpg",
+    "img/img_m_cs2_4.jpg",
+  ];
+
+  const mobileWebImages = ["img/img_m_cs3_1.jpg", "img/img_m_cs3_2.jpg"];
+
+  const tabletSocialImages = [
+    "img/img_t_cs1_1.jpg",
+    "img/img_t_cs1_2.jpg",
+    "img/img_t_cs1_3.jpg",
+    "img/img_t_cs1_4.jpg",
+  ];
+
+  const tabletBrandingImages = [
+    "img/img_t_cs2_1.jpg",
+    "img/img_t_cs2_2.jpg",
+    "img/img_t_cs2_3.jpg",
+    "img/img_t_cs2_4.jpg",
+  ];
+
+  const tabletWebImages = ["img/img_t_cs3_1.jpg", "img/img_t_cs3_2.jpg"];
+
   const delay = 3000;
   let currentPosition = 0;
   let currentPositionWeb = 0;
@@ -43,9 +75,19 @@ window.onload = function () {
   }
 
   function renderImage() {
-    $socialImage.style.backgroundImage = `url(${socialImages[currentPosition]})`;
-    $brandingImage.style.backgroundImage = `url(${brandingImages[currentPosition]})`;
-    $webImage.style.backgroundImage = `url(${webImages[currentPositionWeb]})`;
+    if (screen.width < 768) {
+      $socialImage.style.backgroundImage = `url(${mobileSocialImages[currentPosition]})`;
+      $brandingImage.style.backgroundImage = `url(${mobileBrandingImages[currentPosition]})`;
+      $webImage.style.backgroundImage = `url(${mobileWebImages[currentPositionWeb]})`;
+    } else if (screen.width < 1024) {
+      $socialImage.style.backgroundImage = `url(${tabletSocialImages[currentPosition]})`;
+      $brandingImage.style.backgroundImage = `url(${tabletBrandingImages[currentPosition]})`;
+      $webImage.style.backgroundImage = `url(${tabletWebImages[currentPositionWeb]})`;
+    } else {
+      $socialImage.style.backgroundImage = `url(${socialImages[currentPosition]})`;
+      $brandingImage.style.backgroundImage = `url(${brandingImages[currentPosition]})`;
+      $webImage.style.backgroundImage = `url(${webImages[currentPositionWeb]})`;
+    }
   }
 
   renderImage();
