@@ -76,13 +76,6 @@ h3 {
   background-repeat: round;
 }
 
-.bg-plus {
-  background: url(../img/bg_package_3.png);
-  background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat;
-}
-
 @media screen and (min-width: 768px) {
   .packages-deals {
     width: 330px;
@@ -130,10 +123,5 @@ h3 {
 
   .web {
     grid-column: 2/3;
-  }
-
-  .plus {
-    grid-template-columns: repeat(2, 1fr);
-    margin-top: 32px;
   }
 }
