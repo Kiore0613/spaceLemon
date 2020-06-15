@@ -40,7 +40,7 @@ h3 {
   flex-flow: column;
   justify-content: space-between;
   margin: 56px 32px;
-  height: 390px;
+  height: 320px;
   background: #ffffff;
   -webkit-box-shadow: 10px 10px 5px 8px rgba(0, 0, 0, 0.56);
   -moz-box-shadow: 10px 10px 5px 8px rgba(0, 0, 0, 0.56);
@@ -76,22 +76,11 @@ h3 {
   background-repeat: round;
 }
 
-.packages-plus {
-  display: flex;
-  justify-content: space-evenly;
-  margin: 56px 0;
-}
-
 .bg-plus {
   background: url(../img/bg_package_3.png);
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
-}
-
-.plus {
-  margin: 16px;
-  height: 250px;
 }
 
 @media screen and (min-width: 768px) {
@@ -146,5 +135,9 @@ h3 {
     margin: 0 auto;
     width: 290px;
     height: 500px;
+  }
+
+  .web {
+    grid-column: 2/3;
   }
 }
