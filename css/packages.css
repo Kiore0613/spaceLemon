@@ -85,12 +85,7 @@ h3 {
 
 @media screen and (min-width: 768px) {
   .packages-deals {
-    width: 460px;
-    margin: 0 auto;
-  }
-
-  .plus {
-    width: 300px;
+    width: 330px;
     margin: 0 auto;
   }
 }
@@ -109,10 +104,6 @@ h3 {
   .packages {
     height: 800px;
     margin-top: 32px;
-  }
-
-  .plus {
-    height: 320px !important;
   }
 
   .bg-fb {
@@ -134,10 +125,15 @@ h3 {
     padding: 20px;
     margin: 0 auto;
     width: 290px;
-    height: 500px;
+    height: 400px;
   }
 
   .web {
     grid-column: 2/3;
+  }
+
+  .plus {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 32px;
   }
 }
