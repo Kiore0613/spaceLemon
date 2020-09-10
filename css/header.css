@@ -1,0 +1,33 @@
+.header-text {
+  margin-top: 32px;
+  font-family: "bebas";
+  font-size: 16px;
+  text-align: center;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    height: 480px;
+  }
+  .header-text {
+    margin-top: 160px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
+  }
+  header {
+    height: 700px;
+  }
+
+  .header-text {
+    margin-top: 260px;
+  }
+}
